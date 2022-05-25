@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public extension UIView{
-    func anchor(
+    public func anchor(
         top: NSLayoutYAxisAnchor?,
         bottom: NSLayoutYAxisAnchor?,
         leading: NSLayoutXAxisAnchor?,
