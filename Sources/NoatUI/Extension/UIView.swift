@@ -16,7 +16,7 @@ public extension UIView{
         trailing: NSLayoutXAxisAnchor?,
         padding: UIEdgeInsets = .zero,
         size: CGSize = .zero
-    ){
+    ) -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
         
         if let top = top {
@@ -42,6 +42,8 @@ public extension UIView{
         if size.height != 0{
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
+        
+        return self
     }
     
     func vstack(
